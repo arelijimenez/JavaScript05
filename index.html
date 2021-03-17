@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    
+    <style>
+        h1 {margin-bottom: 30px;}
+        label {font-weight: bold;}
+        input, select {margin-bottom: 10px;}
+        form {width: 30%; padding: 20px;}
+        fieldset {border-color: orange; background-color: rgb(209, 202, 202);}
+        button {color: white; font-size: .75rem; background-color: rgb(21, 86, 170);}
+        
+    </style>
+</head>
+
+<body class="mt-2 ml-4">
+    <h1>Employee Management System</h1>
+    <form id="empForm" name="empForm" onsubmit="return validateForm()" method="post">
+        <fieldset>
+            <div>
+                <label for="employeeID">8-Digit Employee ID</label><br>
+                <input type="text" id="employeeID" name="employeeID" required><br>
+                <span></span></div>
+            <div>
+                <label for="fullName">Full Name</label><br>
+                <input type="text" id="fullName" name="fullName" required><br>
+                <span></span></div>
+            <div>
+                <label for="extension">4-Digit Extension</label><br>
+                <input type="text" id="extension" name="extension" required><br>
+                <span></span></div>
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <span></span></div>
+            <div>
+                <label for="departament">Departament</label><br>
+                <select name="department" id="department" required>
+                    <option value="administrative">Administrative</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="executive">Executive</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="quality">Quality Assurance</option>
+                    <option value="sales">Sales</option>
+                </select><br>
+                <span></span></div>
+            <div class="button">
+                <label>&nbsp;</label><br>
+                <button id="addEmployee" value="Add Employee">Add Employee
+                    </button><span></span><br><br>
+            </div>
+        </fieldset>
+    </form>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
